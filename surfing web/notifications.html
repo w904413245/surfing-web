@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                        <button type="button" class="btn btn-outline-info" onclick="showNotification()"><img src="image/n.png" class="img-fluid" alt="notification"></button>
+                  </div>
+                  <div class="col-sm">
+                        <button type="button" class="btn btn-outline-info" onclick="showPic()"><img src="image/pic.png" class="img-fluid" alt="picture"></button>
+                  </div>
+                  <div class="col-sm">
+                        <button type="button" class="btn btn-outline-info" onclick="showChatting()"><img src="image/chat.png" class="img-fluid" alt="chatting"></button>
+                  </div>
+                </div>
+        </div>
+        <div id="notification">
+        <p class="text-center">example notification</p>
+        </div>
+
+        <div id="pic">
+                <p class="text-center"><img src="image/example.jpg" class="img-fluid" alt="picture"></p>
+        </div>
+
+        <div id="chatting">
+        <p class="text-center">example chatting</p>
+        </div>
+
+</body>
+
+<script>
+
+    document.getElementById('notification').style.display = 'block';
+    document.getElementById('pic').style.display = 'none';
+    document.getElementById('chatting').style.display = 'none';
+    
+ function showNotification(){
+    document.getElementById('notification').style.display = 'block';
+    document.getElementById('pic').style.display = 'none';
+    document.getElementById('chatting').style.display = 'none';
+ }
+
+ function showPic(){
+    document.getElementById('notification').style.display = 'none';
+    document.getElementById('pic').style.display = 'block';
+    document.getElementById('chatting').style.display = 'none';
+ }
+
+ function showChatting(){
+    document.getElementById('notification').style.display = 'none';
+    document.getElementById('pic').style.display = 'none';
+    document.getElementById('chatting').style.display = 'block';
+ }
+</script>
+</html>

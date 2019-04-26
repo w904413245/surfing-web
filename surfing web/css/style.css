@@ -1,0 +1,61 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+
+.container-fluid{
+    width: 100%;
+    height:100%;
+}
+
+#top-bar{
+    background: rgb(109, 229, 233);
+    height: 5%;
+    min-height: 2.5rem;
+}
+
+.hide{
+    display: none !important;
+}
+
+table{
+    width: 100%;
+    height: 85%;
+}
+
+#home-logo{
+    padding-left: 50%;
+}
+#home-surf{
+    text-align: center;
+    background: grey;
+    vertical-align: middle;
+}
+#home-coach{
+    text-align: center;
+    background: blue;
+    vertical-align: middle;
+}
+#home-browse{
+    text-align: center;
+    background: red;
+    vertical-align: middle;
+}
+#home-course{
+    text-align: center;
+    background: gold;
+    vertical-align: middle;
+}
+
+#sort-method{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* Media Queries for Responsive */
+@media(max-width: 376px){
+    .result-title, #search-bar{
+        max-width: 78%;
+    }    
+}

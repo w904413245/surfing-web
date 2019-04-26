@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Result</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="row align-items-center sticky-top" id="top-bar">
+            <div class="col-1 justify-content-start" id="return-bar">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="col-10" id="search-bar">
+                <i class="fas fa-search  d-flex justify-content-end" id="search-icon"></i>
+                <div class="input-group flex-nowrap hide" id="search-area">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" name="search" id="search-input" class="form-control">
+                </div>
+            </div>
+            <div class="col-1" id="user-btn">
+                <i class="far fa-user  d-flex justify-content-center"></i>
+            </div>
+        </header>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons" id="sort-method">
+            <label class="btn btn-secondary">
+                <input type="radio" name="latest" id="latest" autocomplete="off" checked> Latest &nabla;
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="alpha" id="alpha" autocomplete="off"> Alphabet &Delta;
+            </label>
+        </div>
+
+        <!-- Result list -->
+        <ul class="list-group" id="result-list">
+            <li class="list-group-item">
+                <div class="row  align-items-center">
+                    <div class="col-10 result-title">Your Title</div>
+                    <div class="col-1">
+                        <i class="fas fa-images"></i>
+                        <span>6</span>
+                    </div>
+                    <div class="col-1">
+                        <i class="far fa-comment-dots"></i>
+                        <span>8</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row  align-items-center">
+                    <div class="col-10 result-title">Your Title</div>
+                    <div class="col-1">
+                        <i class="fas fa-images"></i>
+                        <span>6</span>
+                    </div>
+                    <div class="col-1">
+                        <i class="far fa-comment-dots"></i>
+                        <span>8</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row  align-items-center">
+                    <div class="col-10 result-title">Your Title</div>
+                    <div class="col-1">
+                        <i class="fas fa-images"></i>
+                        <span>6</span>
+                    </div>
+                    <div class="col-1">
+                        <i class="far fa-comment-dots"></i>
+                        <span>8</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row  align-items-center">
+                    <div class="col-10 result-title">Your Title</div>
+                    <div class="col-1">
+                        <i class="fas fa-images"></i>
+                        <span>6</span>
+                    </div>
+                    <div class="col-1">
+                        <i class="far fa-comment-dots"></i>
+                        <span>8</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row  align-items-center">
+                    <div class="col-10 result-title">Your Title</div>
+                    <div class="col-1">
+                        <i class="fas fa-images"></i>
+                        <span>6</span>
+                    </div>
+                    <div class="col-1">
+                        <i class="far fa-comment-dots"></i>
+                        <span>8</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row  align-items-center">
+                    <div class="col-10 result-title">Your Title</div>
+                    <div class="col-1">
+                        <i class="fas fa-images"></i>
+                        <span>6</span>
+                    </div>
+                    <div class="col-1">
+                        <i class="far fa-comment-dots"></i>
+                        <span>8</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="javascipt/script.js"></script>
+</body>
+
+</html>

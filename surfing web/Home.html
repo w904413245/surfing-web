@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Header bar with functions -->
+        <header class="row align-items-center sticky-top" id="top-bar">
+            <div class="col-1 justify-content-start" id="return-bar">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="col-10" id="search-bar">
+                <i class="fas fa-search  d-flex justify-content-end" id="search-icon"></i>
+                <div class="input-group flex-nowrap hide" id="search-area">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" name="search" id="search-input" class="form-control">
+                </div>
+            </div>
+            <div class="col-1" id="user-btn">
+                <i class="far fa-user  d-flex justify-content-center"></i>
+            </div>
+        </header>
+
+        <!-- Home page content -->
+        <!-- Using list-group -->
+        <!-- <ul class="list-group list-group-flush" id="home-page">
+            <li class="list-group-item" id="home-page-logo">
+                <img src="" alt="Logo"> 
+                <i class="fab fa-html5"></i>
+            </li>
+            <li class="list-group-item" id="home-page-go-surfing">
+                <p>Going Surfing</p>
+            </li>
+            <li class="list-group-item" id="home-page-ask-a-coach">
+                <p>Ask a Coach</p>
+            </li>
+            <li class="list-group-item" id="home-page-browse">
+                <p>Browse/Search</p>
+            </li>
+            <li class="list-group-item" id="home-page-courses">
+                <p>Courses</p>
+            </li>
+        </ul> -->
+        <!-- Using row and reverse -->
+        <!-- <div class="row flex-column-reverse" id="home-page">
+            <div class="col-md-2">
+                <p>Courses</p>
+            </div>
+            <div class="col-md-2">
+                <p>Browse/Search</p>
+            </div>
+            <div class="col-md-2">
+                <p>Ask a Coach</p>
+            </div>
+            <div class="col-md-2">
+                <p>Going Surfing</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fab fa-html5"></i>
+            </div>
+        </div> -->
+        <!-- Using table -->
+        <table>
+            <tr height="20%">
+                <td id="home-logo" valign="middle">
+                    <i class="fab fa-html5"></i>
+                </td>
+            </tr>
+            <tr height="10%">
+                <td id="home-surf">
+                    <p>Going Surfing</p>
+                </td>
+            </tr>
+            <tr height="10%">
+                <td id="home-coach">
+                    <p>Ask a Coach</p>
+                </td>
+            </tr>
+            <tr height="10%">
+                <td id="home-browse">
+                    <p>Browse/Search</p>
+                </td>
+            </tr>
+            <tr height="10%">
+                <td id="home-course">
+                    <p>Courses</p>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
