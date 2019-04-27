@@ -1,0 +1,35 @@
+.button-size
+{
+    height:300px;
+    width:33%;
+    border: none;
+    background: #edf8f9;
+    
+}
+
+.pic-container
+{
+    background: #edf8f9;
+
+
+}
+
+.txt-part
+{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    margin-left: 150px;
+    text-align: left;
+}
+
+.pic-part
+{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    margin-left: 150px;
+    text-align: center;
+
+
+}
