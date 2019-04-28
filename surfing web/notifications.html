@@ -3,58 +3,97 @@
 	<meta charset="UTF-8">
     <title>main</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-wz.css">
 </head>
 
 <body>
-        <div class="container">
+        <div class="pic-container">
                 <div class="row">
-                  <div class="col-sm">
-                        <button type="button" class="btn btn-outline-info" onclick="showNotification()"><img src="image/n.png" class="img-fluid" alt="notification"></button>
-                  </div>
-                  <div class="col-sm">
-                        <button type="button" class="btn btn-outline-info" onclick="showPic()"><img src="image/pic.png" class="img-fluid" alt="picture"></button>
-                  </div>
-                  <div class="col-sm">
-                        <button type="button" class="btn btn-outline-info" onclick="showChatting()"><img src="image/chat.png" class="img-fluid" alt="chatting"></button>
+                        <button type="button" class="button-size" onclick="showNotification()"><img src="image/n.png"  class="img-fluid" alt="notification"></button>
+                        <button type="button" class="button-size" onclick="showPic()"><img src="image/pic.png" class="img-fluid" alt="picture"></button>
+                        <button type="button" class="button-size" onclick="showChatting()"><img src="image/chat.png" class="img-fluid" alt="chatting"></button>
                   </div>
                 </div>
         </div>
+      <div class = txt-part>
         <div id="notification">
-        <p class="text-center">example notification</p>
-        </div>
-
-        <div id="pic">
-                <p class="text-center"><img src="image/example.jpg" class="img-fluid" alt="picture"></p>
+        <p>What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            
+            
+            Where does it come from?
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         </div>
 
         <div id="chatting">
-        <p class="text-center">example chatting</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor ex erat, eu vehicula nunc maximus eu. Ut tempor ullamcorper commodo. Etiam elit purus, finibus nec sagittis nec, semper sed enim. Morbi sollicitudin orci ac orci vehicula, at ultrices velit consectetur. Quisque elementum metus pulvinar ipsum tincidunt egestas. Aenean rutrum venenatis quam, non convallis erat facilisis nec. Phasellus convallis tortor luctus velit eleifend congue. Curabitur commodo elit mauris, non egestas ex consequat vel. Ut vel diam eget arcu tempus volutpat vel a erat. Pellentesque dapibus iaculis magna vitae ullamcorper.
+
+            Aliquam in urna massa. Sed eu interdum eros, et laoreet risus. Vivamus id euismod velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis volutpat lorem ac ultricies. Praesent ex arcu, scelerisque blandit lorem sit amet, ultrices ullamcorper metus. Vivamus nunc erat, tempus non tellus volutpat, sollicitudin pulvinar odio. Pellentesque sollicitudin nibh at ante luctus, non feugiat nulla semper. Duis pharetra, dolor pulvinar tincidunt consectetur, velit felis auctor mauris, non venenatis nisi magna ac enim.
+            
+            In elementum imperdiet nunc, sed tincidunt nulla posuere ac. Praesent velit leo, rutrum eget imperdiet maximus, vestibulum non purus. Duis pretium urna nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed maximus magna. Cras efficitur libero a enim pulvinar, at varius nunc semper. Sed pulvinar nisi dolor, vel sollicitudin lectus facilisis non. Duis iaculis eget sapien sed congue. Etiam sodales risus ac lorem vestibulum ornare. Pellentesque a venenatis lorem. Vivamus tempus venenatis metus, id blandit ligula. Sed iaculis turpis et lorem porta commodo.
+            
+            Aliquam a justo vel augue porta ultrices. Mauris nec dui ligula. Nulla in ligula blandit, efficitur ex a, volutpat lectus. Cras tincidunt accumsan vehicula. Nulla facilisi. Phasellus ac iaculis turpis. Ut pharetra at libero sit amet euismod. Vivamus tempus justo lacus. Suspendisse condimentum viverra ligula aliquet sollicitudin. Donec suscipit posuere eros, ac posuere lectus luctus eget. Donec sed metus diam. Cras sagittis lacus nec magna porta, a mattis turpis feugiat.
+            
+            Pellentesque tristique tempor sapien vel pharetra. Nulla consectetur est nisi, bibendum blandit elit placerat vel. Proin in nisi scelerisque ipsum convallis aliquam. Aliquam maximus semper nunc non sagittis. Proin sit amet fermentum nisi. Cras eu nunc nec risus accumsan condimentum. Donec suscipit condimentum dictum.</p>
         </div>
+      </div>
+
+      <div class = pic-part>
+         <div>
+               <p><img src="https://picsum.photos/1200/400" class="img-fluid" alt="picture"></p>
+         </div>
+         <div>
+               <p><img src="https://picsum.photos/1200/400" class="img-fluid" alt="picture"></p>
+         </div>
+         <div>
+            <p><img src="https://picsum.photos/1200/400" class="img-fluid" alt="picture"></p>
+         </div>
+      </div>
+
 
 </body>
 
 <script>
 
     document.getElementById('notification').style.display = 'block';
-    document.getElementById('pic').style.display = 'none';
+    var pic = document.getElementsByClassName('pic-part');
+    var len = pic.length;
+    for(var x = 0; x < len; x++){
+      pic[x].style.display = 'none';
+    }
     document.getElementById('chatting').style.display = 'none';
-    
- function showNotification(){
+
+    function showNotification(){
     document.getElementById('notification').style.display = 'block';
-    document.getElementById('pic').style.display = 'none';
+    var pic = document.getElementsByClassName('pic-part');
+    var len = pic.length;
+    for(var x = 0; x < len; x++){
+      pic[x].style.display = 'none';
+    }
     document.getElementById('chatting').style.display = 'none';
- }
+    }
 
- function showPic(){
+    function showPic(){
     document.getElementById('notification').style.display = 'none';
-    document.getElementById('pic').style.display = 'block';
+    var pic = document.getElementsByClassName('pic-part');
+    var len = pic.length;
+    for(var x = 0; x < len; x++){
+      pic[x].style.display = 'block';
+    }
     document.getElementById('chatting').style.display = 'none';
- }
+    }
 
- function showChatting(){
+    function showChatting(){
     document.getElementById('notification').style.display = 'none';
-    document.getElementById('pic').style.display = 'none';
+    var pic = document.getElementsByClassName('pic-part');
+    var len = pic.length;
+    for(var x = 0; x < len; x++){
+      pic[x].style.display = 'none';
+    }
     document.getElementById('chatting').style.display = 'block';
- }
+    }
 </script>
 </html>
