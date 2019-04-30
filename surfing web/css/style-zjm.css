@@ -9,9 +9,9 @@ body
 
 .title
 {
-    color: #3c3939;
+    color: #ffffff;
     position: absolute;
-    left: 20px;
+    right: 20px;
     bottom: 0;
 }
 
@@ -32,14 +32,14 @@ body
 .button-container
 {
     text-align: center;
-    padding: 80px;
+    padding-bottom: 130px;
 }
 
 .botton
 {
     border: 1px solid #3498db;
-    color: #3498db;
-    background: none;
+    color: #ffffff;
+    background: #545c71;
     padding: 10px 20px;
     font-size: 30px;
     cursor: pointer;
@@ -49,13 +49,14 @@ body
 
 .botton:hover
 {
-    color: #ffffff;
+    color: #091733;
 }
 
 .slider
 {
-    width: 80%;
+    width: 70%;
     height: 20px;
+    margin-bottom: 100px;
     background-color: khaki;
     border-radius: 20px;
     opacity: 0.6;
@@ -108,7 +109,7 @@ body
     border-radius: 16px;
     text-align: center;
     color: #ffffff;
-    background-color: #4b4fe2;
+    background-color: #70ac48;
 }
 
 .overhead-bar
@@ -117,7 +118,7 @@ body
   border-radius: 16px;
   text-align: center;
   color: #ffffff;
-  background-color: darkorchid;
+  background-color: #fe0000;
 }
 
 .doubleoverhead-bar
@@ -126,7 +127,7 @@ body
   border-radius: 16px;
   text-align: center;
   color: #ffffff;
-  background-color: cadetblue;
+  background-color: #ffc000;
 }
 
 .tripleoverhead-bar
@@ -135,5 +136,10 @@ body
   border-radius: 16px;
   text-align: center;
   color: #ffffff;
-  background-color: olivedrab;
+  background-color: #4472c7;
+}
+
+.icon
+{
+    width: 10%;
 }
