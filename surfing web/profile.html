@@ -3,53 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="css/style-zjm.css">
+    <link rel="stylesheet" type="text/css" href="css/style-zjm.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet">
 </head>
 <body>
-    <div class="profile-card">
-        <div class="image-container">
-            <img src="image/user.jpg" style="width: 100%">
-            <div class="title">
-                <h1>Lawrence Zhang</h1>
+
+    <div class="container-fluid">
+            <!-- Header bar with functions -->
+            <header class="row align-items-center sticky-top" id="top-bar">
+                    <div class="col-1 justify-content-start" id="return-bar">
+                            <a onclick="goBack()"><i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <div class="col-10" id="search-bar">
+                        <i class="fas fa-search  d-flex justify-content-end" id="search-icon"></i>
+                        <div class="input-group flex-nowrap hide" id="search-area">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" name="search" id="search-input" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-1" id="user-btn">
+                        <i class="far fa-user  d-flex justify-content-center"></i>
+                    </div>
+                </header>
+
+
+                <div class="profile-card">
+                    <div class="image-container">
+                        <img src="image/user.jpg" style="width: 100%">
+                        <div class="title">
+                            <h1>Lawrence Zhang</h1>
+                        </div>
+                    </div>
+                    <div class="main-container">
+
+                        <p><i class="fa fa-user-circle info" aria-hidden="true"></i>Level: Intermediate</p>
+                        <p><i class="fa fa-star info" aria-hidden="true"></i>Subscription: Free</p>
+                        <div class="subscription-image-container">
+                            <img src="image/subcription.jpg" style="width: 40%">
+                        </div>
+                        <p><i class="fa fa-life-ring info" aria-hidden="true"></i>Wave Count: 233</p>
+
+                        <hr>
+
+                        <p><b><i class="fa fa-asterisk info" aria-hidden="true"></i>Session Stats</b></p>
+                        <p><i class="fa fa-life-ring info" aria-hidden="true"></i>Wave Size</p>
+
+                        <div class="subscription-image-container">
+                            <img src="image/piechart.jpg" style="width: 90%">
+                        </div>
+
+                        <div class="stats-bar">
+                            <div class="headhigh-bar" style="width:80%">Head High</div>
+                        </div>
+
+                        <div class="stats-bar">
+                        <div class="overhead-bar" style="width:48%">Over Head</div>
+                        </div>
+
+                        <div class="stats-bar">
+                        s<div class="doubleoverhead-bar" style="width:66%">Double Over Head</div>
+                        </div>
+
+                        <div class="stats-bar">
+                        <div class="tripleoverhead-bar" style="width:32%">Triple Over Head</div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="main-container">
 
-            <p><i class="fa fa-user-circle info" aria-hidden="true"></i>Level: Intermediate</p>
-            <p><i class="fa fa-star info" aria-hidden="true"></i>Subscription: Free</p>
-            <div class="subscription-image-container">
-                <img src="image/subcription.jpg" style="width: 40%">
-            </div>
-            <p><i class="fa fa-life-ring info" aria-hidden="true"></i>Wave Count: 233</p>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="javascript/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
 
-            <hr>
-
-            <p><b><i class="fa fa-asterisk info" aria-hidden="true"></i>Session Stats</b></p>
-            <p><i class="fa fa-life-ring info" aria-hidden="true"></i>Wave Size</p>
-
-            <div class="subscription-image-container">
-                <img src="image/piechart.jpg" style="width: 90%">
-            </div>
-
-            <div class="stats-bar">
-                <div class="headhigh-bar" style="width:80%">Head High</div>
-            </div>
-
-            <div class="stats-bar">
-              <div class="overhead-bar" style="width:48%">Over Head</div>
-            </div>
-
-            <div class="stats-bar">
-              <div class="doubleoverhead-bar" style="width:66%">Double Over Head</div>
-            </div>
-
-            <div class="stats-bar">
-              <div class="tripleoverhead-bar" style="width:32%">Triple Over Head</div>
-            </div>
-
-        </div>
-    </div>
 </body>
 </html>

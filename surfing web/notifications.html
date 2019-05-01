@@ -1,22 +1,52 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <head>
 	<meta charset="UTF-8">
     <title>main</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style-wz.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-wz.css">
+    
 </head>
 
 <body>
+        <div class="container-fluid">
+            <!-- Header bar with functions -->
+            <header class="row align-items-center sticky-top" id="top-bar">
+                <div class="col-1 justify-content-start" id="return-bar">
+                    <a onclick="goBack()"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="col-10" id="search-bar">
+                    <i class="fas fa-search  d-flex justify-content-end" id="search-icon"></i>
+                    <div class="input-group flex-nowrap hide" id="search-area">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="addon-wrapping">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="search" id="search-input" class="form-control">
+                    </div>
+                </div>
+                <div class="col-1" id="user-btn">
+                    <a href="profile.html">
+                    <i class="far fa-user  d-flex justify-content-center"></i></a>
+                </div>
+            </header>
+       
+
+
         <div class="pic-container">
                 <div class="row">
                         <button type="button" class="button-size" onclick="showNotification()"><img src="image/n.png"  class="img-fluid" alt="notification"></button>
                         <button type="button" class="button-size" onclick="showPic()"><img src="image/pic.png" class="img-fluid" alt="picture"></button>
                         <button type="button" class="button-size" onclick="showChatting()"><img src="image/chat.png" class="img-fluid" alt="chatting"></button>
                   </div>
-                </div>
+                
         </div>
-      <div class = txt-part>
-        <div id="notification">
+
+      <div class ="txt-part">
+        <div id="notification" v-show="ok">
         <p>What is Lorem Ipsum?
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             
@@ -28,7 +58,7 @@
             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         </div>
 
-        <div id="chatting">
+        <div id="chatting" v-show="ok">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor ex erat, eu vehicula nunc maximus eu. Ut tempor ullamcorper commodo. Etiam elit purus, finibus nec sagittis nec, semper sed enim. Morbi sollicitudin orci ac orci vehicula, at ultrices velit consectetur. Quisque elementum metus pulvinar ipsum tincidunt egestas. Aenean rutrum venenatis quam, non convallis erat facilisis nec. Phasellus convallis tortor luctus velit eleifend congue. Curabitur commodo elit mauris, non egestas ex consequat vel. Ut vel diam eget arcu tempus volutpat vel a erat. Pellentesque dapibus iaculis magna vitae ullamcorper.
 
             Aliquam in urna massa. Sed eu interdum eros, et laoreet risus. Vivamus id euismod velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis volutpat lorem ac ultricies. Praesent ex arcu, scelerisque blandit lorem sit amet, ultrices ullamcorper metus. Vivamus nunc erat, tempus non tellus volutpat, sollicitudin pulvinar odio. Pellentesque sollicitudin nibh at ante luctus, non feugiat nulla semper. Duis pharetra, dolor pulvinar tincidunt consectetur, velit felis auctor mauris, non venenatis nisi magna ac enim.
@@ -41,7 +71,7 @@
         </div>
       </div>
 
-      <div class = pic-part>
+      <div class ="pic-part" id="image-part" v-show = "ok">
          <div>
                <p><img src="https://picsum.photos/1200/400" class="img-fluid" alt="picture"></p>
          </div>
@@ -53,47 +83,58 @@
          </div>
       </div>
 
-
+    </div>
 </body>
+ 
 
-<script>
-
-    document.getElementById('notification').style.display = 'block';
-    var pic = document.getElementsByClassName('pic-part');
-    var len = pic.length;
-    for(var x = 0; x < len; x++){
-      pic[x].style.display = 'none';
-    }
-    document.getElementById('chatting').style.display = 'none';
-
-    function showNotification(){
-    document.getElementById('notification').style.display = 'block';
-    var pic = document.getElementsByClassName('pic-part');
-    var len = pic.length;
-    for(var x = 0; x < len; x++){
-      pic[x].style.display = 'none';
-    }
-    document.getElementById('chatting').style.display = 'none';
-    }
-
-    function showPic(){
-    document.getElementById('notification').style.display = 'none';
-    var pic = document.getElementsByClassName('pic-part');
-    var len = pic.length;
-    for(var x = 0; x < len; x++){
-      pic[x].style.display = 'block';
-    }
-    document.getElementById('chatting').style.display = 'none';
-    }
-
-    function showChatting(){
-    document.getElementById('notification').style.display = 'none';
-    var pic = document.getElementsByClassName('pic-part');
-    var len = pic.length;
-    for(var x = 0; x < len; x++){
-      pic[x].style.display = 'none';
-    }
-    document.getElementById('chatting').style.display = 'block';
-    }
+<script src="javascript/vue.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+<script src="javascript/script.js"></script>
+<script> 
+var notification = new Vue({
+  el: '#notification',
+  data : {
+    ok : true
+  }
+});
+var image = new Vue({
+  el: '#image-part',
+  data : {
+    ok : false
+  }
+});
+var chatting = new Vue({
+  el: '#chatting',
+  data : {
+    ok : false
+  }
+});
+function showNotification(){
+  notification.ok = true;
+  image.ok = false;
+  chatting.ok = false;
+}
+function showChatting(){
+  notification.ok = false;
+  image.ok = false;
+  chatting.ok = true;
+}
+function showPic(){
+  notification.ok = false;
+  image.ok = true;
+  chatting.ok = false;
+}
 </script>
+
+
+
+
 </html>
