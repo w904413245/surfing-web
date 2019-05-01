@@ -1,6 +1,39 @@
 html,body{
     width:100%;
     height:100%;
+    background: #FEFFFF;
+}
+
+#cover{
+    position: absolute;
+    left: 0;
+    top: 5%;
+    background:rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+#top-bar{
+    background: #4BD2CD;
+    height: 5%;
+    min-height: 2.5rem;
+}
+
+#top-bar .fas, #top-bar .far{
+    color:#FFF;
+}
+
+#addon-wrapping .fas{
+    color:#525e75 !important;
+}
+
+.fas, .far{
+    color:#525e75;
+}
+
+.fa-html5{
+    color: #000;
+    font-size: 5rem;
 }
 
 .container-fluid{
@@ -8,11 +41,6 @@ html,body{
     height:100%;
 }
 
-#top-bar{
-    background: rgb(109, 229, 233);
-    height: 5%;
-    min-height: 2.5rem;
-}
 
 .hide{
     display: none !important;
@@ -28,22 +56,22 @@ table{
 }
 #home-surf{
     text-align: center;
-    background: grey;
+    background: #616882;
     vertical-align: middle;
 }
 #home-coach{
     text-align: center;
-    background: blue;
+    background: #2b4e5f;
     vertical-align: middle;
 }
 #home-browse{
     text-align: center;
-    background: red;
+    background: #4aa2ab;
     vertical-align: middle;
 }
 #home-course{
     text-align: center;
-    background: gold;
+    background: #323334;
     vertical-align: middle;
 }
 
