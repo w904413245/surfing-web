@@ -36,3 +36,7 @@ $("#alpha").click(function(e){
     $("#alpha").text(toggleFilter($("#alpha").text()));
     //TODO Sort logic
 });
+
+function goBack() {
+    window.history.back();
+  }
