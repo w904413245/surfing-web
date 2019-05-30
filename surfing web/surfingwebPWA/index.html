@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/style-zjm.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Profile">
+    <meta name="apple-mobile-web-app-title" content="Profile">
+    <meta name="theme-color" content="#4bd2cd">
+    <meta name="msapplication-navbutton-color" content="#4bd2cd">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" sizes="200x200" href="/images/strongwave.png">
+    <link rel="apple-touch-icon" sizes="200x200" href="/images/strongwave.png">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- Header bar with functions -->
+        <header class="row align-items-center sticky-top" id="top-bar">
+            <div class="col-1 justify-content-start" id="return-bar">
+                <a onclick="goBack()"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="col-10" id="search-bar">
+                <i class="fas fa-search  d-flex justify-content-end" id="search-icon"></i>
+                <div class="input-group flex-nowrap hide" id="search-area">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" name="search" id="search-input" class="form-control">
+                </div>
+            </div>
+            <div class="col-1" id="user-btn">
+                <i class="far fa-user  d-flex justify-content-center"></i>
+            </div>
+        </header>
+
+
+        <div>
+            <div class="image-container">
+                <img src="images/user.jpg" style="width: 100%">
+                <div class="title">
+                    <h1>Lawrence</h1>
+                </div>
+            </div>
+            <div class="main-container">
+
+                <p><i class="fa fa-user-circle info" aria-hidden="true"></i>Level: Intermediate</p>
+                <p><i class="fa fa-star info" aria-hidden="true"></i>Subscription: Free</p>
+                <div class="subscription-image-container"><img src="images/subcription.jpg" style="width: 35%"></div>
+                <p><i class="fa fa-life-ring info" aria-hidden="true"></i>Wave Count: 233</p>
+
+                <hr>
+
+                <p><b><i class="fa fa-asterisk info" aria-hidden="true"></i>Session Stats</b></p>
+                <p><i class="fa fa-life-ring info" aria-hidden="true"></i>Wave Size</p>
+
+                <div class="subscription-image-container">
+                    <img src="images/piechart.jpg" style="width: 90%">
+                </div>
+
+                <div class="stats-bar">
+                    <div class="headhigh-bar" style="width:80%">Head High</div>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="overhead-bar" style="width:48%">Over Head</div>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="doubleoverhead-bar" style="width:66%">Double Over Head</div>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="tripleoverhead-bar" style="width:32%">Triple Over Head</div>
+                </div>
+
+                <section id="installBanner" class="banner">
+                    <button id="installBtn">Install app</button>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <script src="javascript/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => {
+                        console.log('Service worker registered! 😎', reg);
+                    })
+                    .catch(err => {
+                        console.log('😥 Service worker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+
+    <script>
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', event => {
+
+            // Prevent Chrome 67 and earlier from automatically showing the prompt
+            event.preventDefault();
+
+            // Stash the event so it can be triggered later.
+            deferredPrompt = event;
+
+            // Attach the install prompt to a user gesture
+            document.querySelector('#installBtn').addEventListener('click', event => {
+
+                // Show the prompt
+                deferredPrompt.prompt();
+
+                // Wait for the user to respond to the prompt
+                deferredPrompt.userChoice
+                    .then((choiceResult) => {
+                        if (choiceResult.outcome === 'accepted') {
+                            console.log('User accepted the A2HS prompt');
+                        } else {
+                            console.log('User dismissed the A2HS prompt');
+                        }
+                        deferredPrompt = null;
+                    });
+            });
+
+            // Update UI notify the user they can add to home screen
+            document.querySelector('#installBanner').style.display = 'flex';
+        });
+    </script>
+
+
+</body>
+
+</html>

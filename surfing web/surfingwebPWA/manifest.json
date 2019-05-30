@@ -1,0 +1,15 @@
+{
+  "name": "Profile",
+  "short_name": "Profile",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#4bd2cd",
+  "background_color": "#4bd2cd",
+  "icons": [
+    {
+      "src": "images/strongwave.png",
+      "sizes": "200x200"
+    }
+  ]
+}
