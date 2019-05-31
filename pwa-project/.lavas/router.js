@@ -2,114 +2,114 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
     
-import _1558944264435ea3e50b4af5f7030cf629cefd92d456e from '@/pages/Account.vue';
+import _1559271172053ea3e50b4af5f7030cf629cefd92d456e from '@/pages/Account.vue';
     
 
     
-import _15589442644359d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
+import _15592711720539d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
     
 
     
-import _1558944264435bfa234ad3e5d4f14f8253b9b5672a12c from '@/pages/Ask.vue';
+import _1559271172053bfa234ad3e5d4f14f8253b9b5672a12c from '@/pages/Ask.vue';
     
 
     
-import _1558944264435cf862fbc6b1599f0841edf79ce2f672d from '@/pages/Browse.vue';
+import _1559271172053cf862fbc6b1599f0841edf79ce2f672d from '@/pages/Browse.vue';
     
 
     
-import _1558944264435e62bdb0857668cfc8517f2633e38be02 from '@/pages/Course.vue';
+import _1559271172053e62bdb0857668cfc8517f2633e38be02 from '@/pages/Course.vue';
     
 
     
-import _1558944264435f7fc7554d202a317883db2ae067316d3 from '@/pages/detail/_id.vue';
+import _1559271172053f7fc7554d202a317883db2ae067316d3 from '@/pages/detail/_id.vue';
     
 
     
-import _1558944264435d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
+import _1559271172053d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
     
 
     
-import _155894426443558a1681f9387aa735f19e85896edee63 from '@/pages/Gosurf.vue';
+import _155927117205358a1681f9387aa735f19e85896edee63 from '@/pages/Gosurf.vue';
     
 
     
-import _155894426443567830448037326425509e44bce7632b7 from '@/pages/Index.vue';
+import _155927117205367830448037326425509e44bce7632b7 from '@/pages/Index.vue';
     
 
     
-import _15589442644358df541b53e4cb5088c52e8d2c73e2b09 from '@/pages/login.vue';
+import _15592711720538df541b53e4cb5088c52e8d2c73e2b09 from '@/pages/login.vue';
     
 
     
-import _1558944264435038de326b0270e97f9eef95b6bc74ed7 from '@/pages/Search.vue';
+import _1559271172053038de326b0270e97f9eef95b6bc74ed7 from '@/pages/Search.vue';
     
 
 
 let routes = [
     {
         "path": "/account",
-        "component": _1558944264435ea3e50b4af5f7030cf629cefd92d456e,
+        "component": _1559271172053ea3e50b4af5f7030cf629cefd92d456e,
         "meta": {},
         "name": "account"
     },
     {
         "path": "/appshell",
-        "component": _15589442644359d49a922ebc8a6d77ca82c0a74289b98,
+        "component": _15592711720539d49a922ebc8a6d77ca82c0a74289b98,
         "meta": {},
         "name": "appshell"
     },
     {
         "path": "/ask",
-        "component": _1558944264435bfa234ad3e5d4f14f8253b9b5672a12c,
+        "component": _1559271172053bfa234ad3e5d4f14f8253b9b5672a12c,
         "meta": {},
         "name": "ask"
     },
     {
         "path": "/browse",
-        "component": _1558944264435cf862fbc6b1599f0841edf79ce2f672d,
+        "component": _1559271172053cf862fbc6b1599f0841edf79ce2f672d,
         "meta": {},
         "name": "browse"
     },
     {
         "path": "/course",
-        "component": _1558944264435e62bdb0857668cfc8517f2633e38be02,
+        "component": _1559271172053e62bdb0857668cfc8517f2633e38be02,
         "meta": {},
         "name": "course"
     },
     {
         "path": "/detail/:id",
-        "component": _1558944264435f7fc7554d202a317883db2ae067316d3,
+        "component": _1559271172053f7fc7554d202a317883db2ae067316d3,
         "meta": {},
         "name": "detailId"
     },
     {
         "path": "/gosurf",
-        "component": _155894426443558a1681f9387aa735f19e85896edee63,
+        "component": _155927117205358a1681f9387aa735f19e85896edee63,
         "meta": {},
         "name": "gosurf"
     },
     {
         "path": "/",
-        "component": _155894426443567830448037326425509e44bce7632b7,
+        "component": _155927117205367830448037326425509e44bce7632b7,
         "meta": {},
         "name": "index"
     },
     {
         "path": "/login",
-        "component": _15589442644358df541b53e4cb5088c52e8d2c73e2b09,
+        "component": _15592711720538df541b53e4cb5088c52e8d2c73e2b09,
         "meta": {},
         "name": "login"
     },
     {
         "path": "/search",
-        "component": _1558944264435038de326b0270e97f9eef95b6bc74ed7,
+        "component": _1559271172053038de326b0270e97f9eef95b6bc74ed7,
         "meta": {},
         "name": "search"
     },
     {
         "path": "/error",
-        "component": _1558944264435d2462dcf0c7beccd286c658e08187914,
+        "component": _1559271172053d2462dcf0c7beccd286c658e08187914,
         "meta": {},
         "name": "error",
         "alias": "*"
